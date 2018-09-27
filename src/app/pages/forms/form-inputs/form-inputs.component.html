@@ -1,0 +1,109 @@
+<div class="row">
+  <div class="col-lg-12">
+    <nb-card>
+     
+      <nb-card-body>
+          <h3>CREA TU ACTIVIDAD</h3>
+         <h1><nb-card-header>Tipo de Actividad</nb-card-header></h1> 
+      <div class="demo-radio col-sm-4">
+          <label class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" name="customRadio" >
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Opción Multiple</span>
+          </label>
+          <label class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" name="customRadio" >
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Falso y Verdadero</span>
+          </label>
+          <label class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" name="customRadio" >
+            <span class="custom-control-indicator"></span>
+            <span class="custom-control-description">Relación a Lineas</span>
+          </label>
+          <label class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" name="customRadio" >
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Scrambled</span>
+            </label>
+            <label class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" name="customRadio" >
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Pregunta Abierta</span>
+              </label>
+        </div>
+        <div class="input-group input-group-rounded">
+            <input type="text" placeholder="Titulo Actividad" class="form-control"/>
+          </div>
+        <div class="input-group input-group-rounded">
+          <input type="text" placeholder="Instrucción" class="form-control"/>
+        </div>
+        <div class="row full-name-inputs">
+          <div class="col-sm-5 input-group">
+              <form method="post" action="tratamiento.php">
+                      <nb-card-header>Número de Pregunta</nb-card-header>
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="1" class="btn btn-secondary">1</button>
+                          <button type="2" class="btn btn-secondary">2</button>
+                          <button type="3" class="btn btn-secondary">3</button>
+                          <button type="4" class="btn btn-secondary">4</button>
+                          <button type="5" class="btn btn-secondary">5</button>
+                          <button type="6" class="btn btn-secondary">6</button>
+                        </div> 
+           </form>
+          </div>
+          <div class="col-sm-4 input-group">
+              <form method="post" action="tratamiento.php">
+                      <nb-card-header>Opciones Correctas</nb-card-header>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="1" class="btn btn-secondary">1</button>
+                    <button type="2" class="btn btn-secondary">2</button>
+                    <button type="3" class="btn btn-secondary">3</button>
+                    <button type="4" class="btn btn-secondary">4</button>
+                  </div>
+            </form>
+          </div>
+          <div class="col-sm-4 input-group">
+              <form method="post" action="tratamiento.php">
+                      <nb-card-header>Opciones Incorrectas</nb-card-header>
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="1" class="btn btn-secondary">1</button>
+                          <button type="2" class="btn btn-secondary">2</button>
+                          <button type="3" class="btn btn-secondary">3</button>
+                          <button type="4" class="btn btn-secondary">4</button>
+                        </div>
+            </form>
+          </div>
+        </div>
+        <div>
+        <div class="input-group input-group-rounded">
+          <input type="text" placeholder="Pregunta" class="form-control"/>
+           <form action="/action_page.php">
+              <p id="texto">Imagen:</p>
+              <input type="file" id="myFile" name="filename2">
+              <div class="mt-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+        </div>
+        <div class="input-group ">
+          <nb-card-header>Respuesta</nb-card-header>
+        </div>
+        <div class="row full-name-inputs">
+        <div class="col-sm-6 input-group">
+          <input type="text" placeholder="Correcta" class="form-control"/>
+        </div>
+        <div class="col-sm-6 input-group">
+          <input type="text" placeholder="Incorrecta" class="form-control"/>
+        </div>
+        </div>
+      </div>
+        <div class="col-md-12 text-center">
+        <nb-card-body>
+            <button class="btn btn-success" >Probar</button>
+            <button class="btn btn-warning" >Crear</button>
+            <button class="btn btn-primary" >Eliminar</button>
+          </nb-card-body>
+        </div>
+      </nb-card-body>   
+    </nb-card>
